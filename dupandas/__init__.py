@@ -43,7 +43,7 @@ class Matcher:
 
 		# Override match config and validation check
 		if match_config != None:
-			for key, value in match_config.iteritems():
+			for key, value in match_config.items():
 				if key in self.m_config:
 					if value not in [True, False,1,0]:
 						print ("Invalid: Incorrect boolean value: "+str(value)+" for key: " + str(key))
@@ -105,7 +105,7 @@ class Cleaner:
 
 		# Override clean config and validation check
 		if clean_config != None:
-			for key, value in clean_config.iteritems():
+			for key, value in clean_config.items():
 				if key in self.cc:
 					if value not in [True, False,1,0]:
 						print ("Invalid: Incorrect boolean value: "+str(value)+" for key: " + str(key))
